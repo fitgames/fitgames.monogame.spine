@@ -1,2 +1,3 @@
-# fitgames.monogame.spine
-Monogame Spine Pipeline
+# FitGames.Monogame.Spine
+
+Monogame content processor for Spine project files.
