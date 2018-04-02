@@ -2,4 +2,9 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/MonoGamePipeline/v15
+/.vs
+/packages
+/src/FitGames.MonoGame.Spine/bin
+/src/FitGames.MonoGame.Spine/obj
+/src/FitGames.MonoGame.Spine.Tests/bin
+/src/FitGames.MonoGame.Spine.Tests/obj

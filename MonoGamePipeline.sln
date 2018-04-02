@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitGames.MonoGame.Spine", "src\FitGames.MonoGame.Spine\FitGames.MonoGame.Spine.csproj", "{3E224F67-6C64-4DF9-8466-F90E8B9EB1FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitGames.MonoGame.Spine.Tests", "src\FitGames.MonoGame.Spine.Tests\FitGames.MonoGame.Spine.Tests.csproj", "{8263B1B0-F745-472D-AF70-97F32C0E0908}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E224F67-6C64-4DF9-8466-F90E8B9EB1FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E224F67-6C64-4DF9-8466-F90E8B9EB1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E224F67-6C64-4DF9-8466-F90E8B9EB1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E224F67-6C64-4DF9-8466-F90E8B9EB1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8263B1B0-F745-472D-AF70-97F32C0E0908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8263B1B0-F745-472D-AF70-97F32C0E0908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8263B1B0-F745-472D-AF70-97F32C0E0908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8263B1B0-F745-472D-AF70-97F32C0E0908}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {195C5C90-A453-49F9-B044-57D957BE0BE2}
+	EndGlobalSection
+EndGlobal

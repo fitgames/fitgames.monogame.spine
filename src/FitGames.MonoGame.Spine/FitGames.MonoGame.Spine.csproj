@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;net461</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FitGames.Spine" Version="1.0.1" />
+    <PackageReference Include="MonoGame.Framework.Content.Pipeline.Portable" Version="3.6.0.1625" />
+    <PackageReference Include="MonoGame.Framework.Portable" Version="3.6.0.1625" />
+    <PackageReference Include="System.IO.Compression" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
