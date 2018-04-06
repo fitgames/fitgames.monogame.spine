@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework.Content.Pipeline.Graphics;
-using Spine.Mono.Extended;
+using Spine.Monogame.Pipeline;
 
 namespace FitGames.MonoGame.Spine.Models
 {

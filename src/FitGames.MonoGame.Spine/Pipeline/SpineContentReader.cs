@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Spine;
-using Spine.Mono.Extended;
+using Spine.Monogame.Pipeline;
 using System;
 using System.Collections.Generic;
 

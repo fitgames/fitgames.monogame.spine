@@ -6,7 +6,7 @@ using System.IO;
 namespace FitGames.MonoGame.Spine.Pipeline
 {
     [ContentProcessor(DisplayName = "Spine Game Ready Content Processor")]
-    class SpineContentProcessor : ContentProcessor<SpineImporterResult, SpineProcessorResult>
+    public sealed class SpineContentProcessor : ContentProcessor<SpineImporterResult, SpineProcessorResult>
     {
         public SpineContentProcessor() { }
 

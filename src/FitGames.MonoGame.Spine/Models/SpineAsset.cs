@@ -1,5 +1,5 @@
 ﻿using Spine;
-using Spine.Mono.Extended;
+using Spine.Monogame.Pipeline;
 using System;
 
 namespace FitGames.MonoGame.Spine.Models

@@ -8,3 +8,7 @@
 /src/FitGames.MonoGame.Spine/obj
 /src/FitGames.MonoGame.Spine.Tests/bin
 /src/FitGames.MonoGame.Spine.Tests/obj
+/src/Example2/bin/Windows/x86/Debug
+/src/Example2/Content/bin
+/src/Example2/Content/obj
+/src/Example2/obj/x86/Debug

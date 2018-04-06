@@ -11,7 +11,7 @@ namespace FitGames.MonoGame.Spine.Components
     public class SpineCharacterGameComponent : DrawableGameComponent
     {
         private readonly ISpineAnimationService _animationService;
-        private Skeleton _skeleton;
+        private Skeleton _skeleton = null;
 
         public SpineCharacterGameComponent(Game game) : base(game)
         {
