@@ -16,6 +16,23 @@ namespace FitGames.MonoGame.Spine.Models
             SkeletonJson = contentSkeletonJson;
         }
 
+        public void SetScale(float scale)
+        {
+            if (SkeletonJson.Scale != scale)
+            {
+                var prevX = Skeleton.X;
+                var prevY = Skeleton.Y;
+                var animationName = AnimationState.GetCurrent(0).Animation.Name;
+
+                SkeletonJson.Scale = scale;
+                Setup(true);
+
+                AnimationState.SetAnimation(0, animationName, true);
+                Skeleton.X += prevX;
+                Skeleton.Y += prevY;
+            }
+        }
+
         public Atlas Atlas { get; private set; }
         public ContentSkeletonJson SkeletonJson
         {
@@ -24,25 +41,32 @@ namespace FitGames.MonoGame.Spine.Models
             {
                 _skeletonJson = value;
 
-                if (SkeletonData == null)
-                {
-                    SkeletonData = _skeletonJson.ReadSkeletonData();
-                    SkeletonData.Name = "skeleton";
-                }
-
-                if (Skeleton == null)
-                    Skeleton = new Skeleton(SkeletonData);
-
-                if (AnimationState == null)
-                {
-                    _animationStateData = new AnimationStateData(Skeleton.Data);
-                    AnimationState = new AnimationState(_animationStateData);
-                }
+                Setup();
             }
         }
         public SkeletonData SkeletonData { get; private set; }
         public Skeleton Skeleton { get; private set; }
         public AnimationState AnimationState { get; private set; }
+
+        private void Setup(bool reload = false)
+        {
+            if (SkeletonData == null || reload)
+            {
+                SkeletonData = _skeletonJson.ReadSkeletonData();
+                SkeletonData.Name = "skeleton";
+            }
+
+            if (Skeleton == null || reload)
+            {
+                Skeleton = new Skeleton(SkeletonData);
+            }
+
+            if (AnimationState == null || reload)
+            {
+                _animationStateData = new AnimationStateData(Skeleton.Data);
+                AnimationState = new AnimationState(_animationStateData);
+            }
+        }
 
         public void Dispose()
         {

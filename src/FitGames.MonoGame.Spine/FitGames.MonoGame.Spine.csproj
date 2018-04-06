@@ -2,6 +2,19 @@
 
   <PropertyGroup>
     <TargetFrameworks>net45;net461</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Felipe Ramos</Authors>
+    <Company>Fit Games</Company>
+    <Product>MonoGame Spine Support</Product>
+    <Description>Spine animation pipeline extensions and helpers to get up and running quickly with animations.
+
+Note: Spine Runtime requires a valid license (https://github.com/fitgames/fitgames.spine/blob/master/license.txt)</Description>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/37526913?s=200&amp;v=4</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/fitgames/fitgames.monogame.spine</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fitgames/fitgames.monogame.spine</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageTags>monogame, gamedev, spine, spine-runtime</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
